@@ -10,3 +10,18 @@
  */
 
 console.log('ejercicio 3') //no quitar este console.log, empezar debajo el ejercicio
+
+function calcular(num1, num2, operacion = 'sumar') {
+    if (operacion === 'sumar') {
+        console.log(num1 + num2);
+    } else if (operacion === 'restar') {
+        console.log(num1 - num2);
+    } else {
+        console.log('operacion desconocida');
+    }
+}
+
+calcular(1, 2, 'sumar')
+calcular(6, 4, 'restar')
+calcular(4, 2, 'dividir')
+calcular(5, 5)
